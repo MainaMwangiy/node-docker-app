@@ -27,6 +27,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Routes
 app.use("/api/v1/wallet", routes.WalletUsers)
 
+
+app.get('/', (req, res) => {
+  res.send('Hello heroku');
+});
+
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, (req, res) => {
