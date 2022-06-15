@@ -1,0 +1,1 @@
+module.exports.WalletUsers = require('./WalletUsers');
